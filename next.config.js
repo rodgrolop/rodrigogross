@@ -1,5 +1,11 @@
-module.exports = {
+import { withPWA } from "next-pwa";
+
+module.exports = withPWA({
   distDir: "_next",
+  pwa: {
+    disable: process.env.NODE_ENV === "development",
+    register: true,
+  },
   generateBuildId: async () => {
     if (process.env.BUILD_ID) {
       return process.env.BUILD_ID;
@@ -7,4 +13,4 @@ module.exports = {
       return `${new Date().getTime()}`;
     }
   },
-};
+});
