@@ -27,7 +27,7 @@ export default class MyDocument extends Document {
           <meta name="mobile-web-app-capable" content="yes" />
           <meta
             name="msapplication-config"
-            content="/static/icons/browserconfig.xml"
+            content="/icons/browserconfig.xml"
           />
           <meta
             name="msapplication-TileColor"
@@ -38,17 +38,28 @@ export default class MyDocument extends Document {
 
           <link
             rel="apple-touch-icon"
-            sizes="192x192"
-            href="/icons/android-chrome-192x192.png"
+            sizes="180x180"
+            href="/icons/apple-touch-icon.png"
           />
           <link
             rel="icon"
             type="image/png"
-            sizes="192x192"
-            href="/icons/android-chrome-192x192.png"
+            sizes="32x32"
+            href="/icons/favicon-32x32.png"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/icons/favicon-16x16.png"
           />
           <link rel="manifest" href="manifest.json" />
-          <link rel="shortcut icon" href="/icons/android-chrome-192x192.png" />
+          <link
+            rel="mask-icon"
+            href="/icons/safari-pinned-tab.svg"
+            color="#b71c1c"
+          />
+          <link rel="shortcut icon" href="/icons/favicon.ico" />
 
           <meta name="twitter:card" content="summary" />
           <meta name="twitter:url" content="https://www.rodrigogross.me" />
@@ -61,6 +72,7 @@ export default class MyDocument extends Document {
             name="twitter:image"
             content="https://www.rodrigogross.me/icons/android-chrome-192x192.png"
           />
+          <meta name="twitter:creator" content="@rodrighetto" />
           <meta property="og:type" content="website" />
           <meta property="og:title" content="Rodrigo Gross Lopez Website" />
           <meta
