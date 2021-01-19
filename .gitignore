@@ -35,4 +35,5 @@ yarn-error.log*
 .vercel
 
 # static folder for DigitalOcean App Platform
+_next
 _static
