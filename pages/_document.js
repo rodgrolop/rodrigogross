@@ -9,7 +9,70 @@ export default class MyDocument extends Document {
       <Html lang="en">
         <Head>
           {/* PWA primary color */}
+          <meta name="application-name" content="Rodrigo Gross Lopez Website" />
+          <meta name="apple-mobile-web-app-capable" content="yes" />
+          <meta
+            name="apple-mobile-web-app-status-bar-style"
+            content="default"
+          />
+          <meta
+            name="apple-mobile-web-app-title"
+            content="Rodrigo Gross Lopez Website"
+          />
+          <meta
+            name="description"
+            content="My personal website, will be used as a development lab"
+          />
+          <meta name="format-detection" content="telephone=no" />
+          <meta name="mobile-web-app-capable" content="yes" />
+          <meta
+            name="msapplication-config"
+            content="/static/icons/browserconfig.xml"
+          />
+          <meta
+            name="msapplication-TileColor"
+            content={theme.palette.primary.main}
+          />
+          <meta name="msapplication-tap-highlight" content="no" />
           <meta name="theme-color" content={theme.palette.primary.main} />
+
+          <link
+            rel="apple-touch-icon"
+            sizes="192x192"
+            href="/icons/android-chrome-192x192.png"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="/icons/android-chrome-192x192.png"
+          />
+          <link rel="manifest" href="manifest.json" />
+          <link rel="shortcut icon" href="/icons/android-chrome-192x192.png" />
+
+          <meta name="twitter:card" content="summary" />
+          <meta name="twitter:url" content="https://www.rodrigogross.me" />
+          <meta name="twitter:title" content="Rodrigo Gross Lopez Website" />
+          <meta
+            name="twitter:description"
+            content="My personal website, will be used as a development lab"
+          />
+          <meta
+            name="twitter:image"
+            content="https://www.rodrigogross.me/icons/android-chrome-192x192.png"
+          />
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content="Rodrigo Gross Lopez Website" />
+          <meta
+            property="og:description"
+            content="My personal website, will be used as a development lab"
+          />
+          <meta property="og:site_name" content="Rodrigo Gross Lopez Website" />
+          <meta property="og:url" content="https://www.rodrigogross.me" />
+          <meta
+            property="og:image"
+            content="https://www.rodrigogross.me/icons/apple-touch-icon.png"
+          />
         </Head>
         <body>
           <Main />
