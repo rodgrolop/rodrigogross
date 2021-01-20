@@ -1,6 +1,8 @@
 import React, { useEffect, Fragment } from "react";
 import PropTypes from "prop-types";
 import Head from "next/head";
+import { AnimateSharedLayout } from "framer-motion";
+import { motion } from "framer-motion";
 import { ThemeProvider } from "@material-ui/core/styles";
 // Context
 import { DrawerContextProvider } from "../src/context";
@@ -9,7 +11,7 @@ import theme from "../src/theme";
 import Layout from "../components/layout";
 
 const MyApp = (props) => {
-  const { Component, pageProps } = props;
+  const { Component, pageProps, router } = props;
 
   useEffect(() => {
     // Remove the server-side injected CSS.
@@ -32,7 +34,23 @@ const MyApp = (props) => {
         <ThemeProvider theme={theme}>
           <CssBaseline />
           <Layout>
-            <Component {...pageProps} />
+            <AnimateSharedLayout>
+              <motion.div
+                key={router.route}
+                initial="pageInitial"
+                animate="pageAnimate"
+                variants={{
+                  pageInitial: {
+                    opacity: 0,
+                  },
+                  pageAnimate: {
+                    opacity: 1,
+                  },
+                }}
+              >
+                <Component {...pageProps} />
+              </motion.div>
+            </AnimateSharedLayout>
           </Layout>
         </ThemeProvider>
       </DrawerContextProvider>

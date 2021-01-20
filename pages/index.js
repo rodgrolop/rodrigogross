@@ -1,3 +1,5 @@
+import Link from "next/link";
+import Button from "@material-ui/core/Button";
 import styles from "../styles/Home.module.css";
 
 function createMarkup() {
@@ -13,10 +15,14 @@ const Home = () => (
       <h1 className={styles.title}>
         Welcome to <a href="https://www.rodrigogross.me/">My Website</a>
       </h1>
-
+      <Link href="/test/" passHref>
+        <Button variant="contained" color="secondary" className={styles.link}>
+          Go to test page
+        </Button>
+      </Link>
       <p className={styles.description}>This is a work in progress</p>
       <p className={styles.description}>
-        Latest Update: Drawer Context and layout correctly implemented
+        Latest Update: Added Page transitions with framer-motion API
       </p>
       <div
         className={styles.iframeContainer}
