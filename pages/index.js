@@ -1,5 +1,12 @@
 import styles from "../styles/Home.module.css";
 
+function createMarkup() {
+  return {
+    __html:
+      '<iframe allowfullscreen frameborder="0" scrolling="auto" marginheight="0" marginwidth="0" src="https://www.gqueues.com/public/queues/ag1zfmdxdWV1ZXMtaHJkciYLEgdBY2NvdW50GICAqLmd69cIDAsSBVF1ZXVlGICAqMWu5r0LDA?options=1&subtasks=1&hideControls=1"></iframe>',
+  };
+}
+
 const Home = () => (
   <div className={styles.container}>
     <main className={styles.main}>
@@ -8,12 +15,10 @@ const Home = () => (
       </h1>
 
       <p className={styles.description}>This is a work in progress</p>
-      {/* <iframe
-        src="https://flask.io/BcJKdsEwaHCF?embed=true"
-        style="width: 100%; height: 500px;"
-        frameborder="0"
-        allowfullscreen="allowfullscreen"
-      ></iframe> */}
+      <div
+        className={styles.iframeContainer}
+        dangerouslySetInnerHTML={createMarkup()}
+      />
     </main>
   </div>
 );
