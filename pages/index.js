@@ -15,7 +15,7 @@ const Home = () => (
       </h1>
 
       <p className={styles.description}>This is a work in progress</p>
-      <p className={styles.description}>Hook Test 0.1.8</p>
+      <p className={styles.description}>Drawer Context correctly implemented</p>
       <div
         className={styles.iframeContainer}
         dangerouslySetInnerHTML={createMarkup()}

@@ -1,8 +1,7 @@
 import React from "react";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
-import IconButton from "@material-ui/core/IconButton";
-import MenuIcon from "@material-ui/icons/Menu";
+import MenuButton from "./menu_button";
 
 import { makeStyles } from "@material-ui/core/styles";
 import { styles } from "./styles";
@@ -15,9 +14,7 @@ const Header = () => {
   return (
     <AppBar position="fixed">
       <Toolbar>
-        <IconButton edge="start" color="inherit" aria-label="menu">
-          <MenuIcon />
-        </IconButton>
+        <MenuButton />
         <img
           src="/assets/svg/Caffeine_logo.svg"
           alt="Caffeine Logo"
