@@ -15,7 +15,9 @@ const Home = () => (
       </h1>
 
       <p className={styles.description}>This is a work in progress</p>
-      <p className={styles.description}>Drawer Context correctly implemented</p>
+      <p className={styles.description}>
+        Latest Update: Drawer Context and layout correctly implemented
+      </p>
       <div
         className={styles.iframeContainer}
         dangerouslySetInnerHTML={createMarkup()}
