@@ -5,7 +5,7 @@ import styles from "../styles/Home.module.css";
 function createMarkup() {
   return {
     __html:
-      '<iframe allowfullscreen frameborder="0" scrolling="auto" marginheight="0" marginwidth="0" src="https://www.gqueues.com/public/queues/ag1zfmdxdWV1ZXMtaHJkciYLEgdBY2NvdW50GICAqLmd69cIDAsSBVF1ZXVlGICAqMWu5r0LDA?options=1&subtasks=1&hideControls=1"></iframe>',
+      '<iframe title="My Website Task List" allowfullscreen frameborder="0" scrolling="auto" marginheight="0" marginwidth="0" src="https://www.gqueues.com/public/queues/ag1zfmdxdWV1ZXMtaHJkciYLEgdBY2NvdW50GICAqLmd69cIDAsSBVF1ZXVlGICAqMWu5r0LDA?options=1&subtasks=1&hideControls=1"></iframe>',
   };
 }
 
