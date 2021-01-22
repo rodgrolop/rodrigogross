@@ -7,14 +7,10 @@ import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 
 const MenuButton = () => {
-  const { dispatch, state } = useContext(DrawerContext);
+  const { dispatch } = useContext(DrawerContext);
 
   const openDrawer = () => {
     dispatch({ type: "openDrawer" });
-  };
-
-  const closeDrawer = () => {
-    dispatch({ type: "closeDrawer" });
   };
 
   return (
