@@ -1,12 +1,19 @@
 import React, { useEffect, Fragment } from "react";
 import PropTypes from "prop-types";
+import FramerMotionContainer from "../components/layout/framer_motion";
 import Head from "next/head";
 import { ThemeProvider } from "@material-ui/core/styles";
-// Context
-import { DrawerContextProvider } from "../src/context";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import theme from "../src/theme";
 import Layout from "../components/layout";
+// Context
+import { DrawerContextProvider } from "../src/context";
+
+/* TODO only execute in development  */
+export function reportWebVitals(metric) {
+  console.log(metric);
+}
+/* TODO only execute in development  */
 
 const MyApp = (props) => {
   const { Component, pageProps, router } = props;
@@ -32,7 +39,9 @@ const MyApp = (props) => {
         <ThemeProvider theme={theme}>
           <CssBaseline />
           <Layout>
-            <Component {...pageProps} />
+            <FramerMotionContainer route={router.route}>
+              <Component {...pageProps} />
+            </FramerMotionContainer>
           </Layout>
         </ThemeProvider>
       </DrawerContextProvider>

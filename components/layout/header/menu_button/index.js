@@ -5,7 +5,6 @@ import { DrawerContext } from "../../../../src/context";
 
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
-import CloseIcon from "@material-ui/icons/Close";
 
 const MenuButton = () => {
   const { dispatch, state } = useContext(DrawerContext);
@@ -18,17 +17,7 @@ const MenuButton = () => {
     dispatch({ type: "closeDrawer" });
   };
 
-  return state.open ? (
-    <IconButton
-      color="inherit"
-      edge="start"
-      color="inherit"
-      aria-label="menu"
-      onClick={closeDrawer}
-    >
-      <CloseIcon />
-    </IconButton>
-  ) : (
+  return (
     <IconButton
       color="inherit"
       edge="start"

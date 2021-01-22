@@ -22,7 +22,8 @@ const Home = () => (
       </Link>
       <p className={styles.description}>This is a work in progress</p>
       <p className={styles.description}>
-        Latest Update: Added Page transitions with framer-motion API
+        Latest Update: re Added Page transitions with framer-motion API and i18n
+        initial setup
       </p>
       <div
         className={styles.iframeContainer}

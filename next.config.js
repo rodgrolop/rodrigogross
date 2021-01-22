@@ -2,6 +2,10 @@ const withPWA = require("next-pwa");
 
 module.exports = withPWA({
   distDir: "_next",
+  i18n: {
+    locales: ["es", "en"],
+    defaultLocale: "es",
+  },
   pwa: {
     dest: "public",
     disable: process.env.NODE_ENV === "development",
