@@ -11,6 +11,7 @@ module.exports = withPWA({
     disable: process.env.NODE_ENV === "development",
     register: true,
   },
+  trailingSlash: true,
   generateBuildId: async () => {
     if (process.env.BUILD_ID) {
       return process.env.BUILD_ID;
